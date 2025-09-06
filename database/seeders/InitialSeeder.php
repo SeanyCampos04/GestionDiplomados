@@ -50,7 +50,7 @@ class InitialSeeder extends Seeder
         ];
 
         foreach($user_roles as $user_role){
-            user_role::create($user_role);
+            UserRole::create($user_role);
         }
 
         $this->command->info('Usuarios con roles creados');
