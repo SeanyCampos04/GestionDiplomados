@@ -7,7 +7,7 @@ use App\Models\Departamento;
 use App\Models\Participante;
 use App\Models\Role;
 use App\Models\User;
-use App\Models\user_role;
+use App\Models\UserRole;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
