@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Departamento;
 use App\Models\Role;
 use App\Models\User;
-use App\Models\user_role;
+use App\Models\UserRole;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
@@ -26,8 +26,9 @@ class DepartamentoController extends Controller
      */
     public function create()
     {
-        $role = Role::where('nombre', 'Jefe departamento')->first();
-        $usuarios = user_role::with('user')->where('role_id', $role->id)->get();
+
+    $role = Role::where('nombre', 'Jefe departamento')->first();
+    $usuarios = UserRole::with('user')->where('role_id', $role->id)->get();
 
         return view('departamentos.create', compact('usuarios'));
 
