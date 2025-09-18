@@ -39,19 +39,19 @@
                                     </div>
                                 </button>
 
-                            <!-- </x-slot> -->
-                            <!-- <x-slot name="content">
-                                @if (in_array('admin', $user_roles) or in_array('CAD', $user_roles))
+                            </x-slot>
+                            <<x-slot name="content">
+                                <!-- @if (in_array('admin', $user_roles) or in_array('CAD', $user_roles))
                                     <x-dropdown-link :href="route('registrar_usuario')">
                                         {{ __('Registrar') }}
                                     </x-dropdown-link>
-                                @endif
+                                @endif -->
 
                                 <x-dropdown-link :href="route('usuarios.index')">
                                     {{ __('Usuarios') }}
                                 </x-dropdown-link>
                             </x-slot>
-                        </x-dropdown> -->
+                        </x-dropdown>
                     </div>
 
                     @if (in_array('admin', $user_roles) or
